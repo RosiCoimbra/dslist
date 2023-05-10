@@ -17,6 +17,7 @@ import java.util.List;
 public class GameController {
     @Autowired
     private GameService gameService;
+
     @GetMapping(value = "/{id}")
     public GameDTO findById(@PathVariable Long id){
         GameDTO result = gameService.findById(id);
